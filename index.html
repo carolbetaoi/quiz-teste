@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <div class="question" id="question1">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-text">Qual é a capital do Brasil?</div>
+                </div>
+                <div class="option-box" onclick="selectOption('q1a')">
+                    <input type="radio" id="q1a" name="q1" value="Brasília">
+                    <label for="q1a">Brasília</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q1b')">
+                    <input type="radio" id="q1b" name="q1" value="São Paulo">
+                    <label for="q1b">São Paulo</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q1c')">
+                    <input type="radio" id="q1c" name="q1" value="Rio de Janeiro">
+                    <label for="q1c">Rio de Janeiro</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q1d')">
+                    <input type="radio" id="q1d" name="q1" value="Belo Horizonte">
+                    <label for="q1d">Belo Horizonte</label>
+                </div>
+            </div>
+
+            <div class="question" id="question2">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-text">Qual é a maior planeta do sistema solar?</div>
+                </div>
+                <div class="option-box" onclick="selectOption('q2a')">
+                    <input type="radio" id="q2a" name="q2" value="Terra">
+                    <label for="q2a">Terra</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q2b')">
+                    <input type="radio" id="q2b" name="q2" value="Júpiter">
+                    <label for="q2b">Júpiter</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q2c')">
+                    <input type="radio" id="q2c" name="q2" value="Marte">
+                    <label for="q2c">Marte</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q2d')">
+                    <input type="radio" id="q2d" name="q2" value="Saturno">
+                    <label for="q2d">Saturno</label>
+                </div>
+            </div>
+
+            <div class="question" id="question3">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-text">Qual é a fórmula química da água?</div>
+                </div>
+                <div class="option-box" onclick="selectOption('q3a')">
+                    <input type="radio" id="q3a" name="q3" value="H2O">
+                    <label for="q3a">H2O</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q3b')">
+                    <input type="radio" id="q3b" name="q3" value="CO2">
+                    <label for="q3b">CO2</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q3c')">
+                    <input type="radio" id="q3c" name="q3" value="O2">
+                    <label for="q3c">O2</label>
+                </div>
+                <div class="option-box" onclick="selectOption('q3d')">
+                    <input type="radio" id="q3d" name="q3" value="H2SO4">
+                    <label for="q3d">H2SO4</label>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-footer">
+            <div class="navigation-menu">
+                <div class="question-item" onclick="showQuestion(1)">1</div>
+                <div class="question-item" onclick="showQuestion(2)">2</div>
+                <div class="question-item" onclick="showQuestion(3)">3</div>
+            </div>
+            <button id="finishBtn" onclick="finishQuiz()">Finalizar</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p>Obrigado por responder o quiz!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
